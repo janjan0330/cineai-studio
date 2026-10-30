@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b16">
+<meta name="description" content="AI Video Generator — turn your ideas into cinematic video concepts.">
+<title>Video Generator — AI Video Studio</title>
+<style>
+:root{--bg:#090b16;--panel:#12192d;--line:#2b3553;--text:#f4f6ff;--muted:#9aa6c5;--cyan:#51e1ef;--violet:#9a7cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#25214e,transparent 38%),var(--bg);color:var(--text);font-family:system-ui,sans-serif;line-height:1.6}
+.wrap{width:min(1080px,calc(100% - 28px));margin:auto}header{position:sticky;top:0;background:#090b16ed;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff18;z-index:5}
+nav{height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:900;display:flex;align-items:center;gap:9px}.logo{background:linear-gradient(135deg,var(--cyan),var(--violet));color:#08101b;border-radius:12px;padding:5px 11px;font-size:21px}
+.links{display:flex;gap:20px;color:var(--muted);font-size:14px}a{color:inherit;text-decoration:none}.navbtn,.btn{border-radius:12px;padding:11px 16px;font-weight:800;border:1px solid #ffffff25;background:#ffffff0b;color:var(--text);cursor:pointer}
+.hero{text-align:center;padding:65px 0 35px}.pill{display:inline-block;border:1px solid #51e1ef66;background:#51e1ef15;color:#b7f9ff;border-radius:30px;padding:6px 13px;font-size:13px}
+h1{font-size:clamp(34px,6vw,62px);line-height:1.15;margin:20px auto 14px}.grad{background:linear-gradient(90deg,#7beeff,#b19aff);background-clip:text;color:transparent}.hero p{max-width:650px;color:var(--muted);margin:0 auto 22px;font-size:17px}
+.primary{background:linear-gradient(100deg,var(--cyan),#a18cff);color:#07101b;border:0}.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.workspace{display:grid;grid-template-columns:1.1fr .9fr;gap:17px;padding:20px 0 65px;scroll-margin-top:80px}.card{background:linear-gradient(150deg,#161e35,#101629);border:1px solid var(--line);border-radius:20px;padding:21px;box-shadow:0 15px 45px #0003}
+h2{font-size:21px;margin:0 0 4px}.muted{color:var(--muted);font-size:13px;margin:0 0 15px}label{display:block;margin:14px 0 6px;font-weight:700;font-size:13px}
+textarea,select{width:100%;background:#090f20;color:var(--text);border:1px solid #34405f;border-radius:11px;padding:12px;font:inherit}textarea{min-height:135px;resize:vertical}.row{display:grid;grid-template-columns:1fr 1fr;gap:11px}.hint{font-size:12px;color:var(--muted);margin-top:6px}.wide{width:100%;margin-top:17px}
+.previewbox{min-height:275px;border:1px dashed #485579;border-radius:15px;background:radial-gradient(circle,#33346b55,transparent 60%),#0a1020;display:grid;place-items:center;text-align:center;padding:18px;margin-top:12px}.play{margin:auto auto 12px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--cyan),var(--violet));color:#08101b;font-size:24px}.previewbox p{font-size:13px;color:var(--muted);max-width:250px}.notice{display:none;background:#392b17;border:1px solid #8d682c;color:#ffe0a5;border-radius:12px;padding:12px;margin-top:13px;font-size:13px}.notice.show{display:block}
+.section{text-align:center;padding-bottom:22px}.section h2{font-size:29px}.examples,.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;padding-bottom:60px}.example,.step{border:1px solid var(--line);border-radius:15px;background:#12192d;padding:17px;text-align:right;color:var(--text)}.example{cursor:pointer}.example:hover{border-color:var(--cyan)}.example span,.step p{display:block;color:var(--muted);font-size:13px}.step b{color:var(--cyan);font-size:13px}
+footer{border-top:1px solid #ffffff18;padding:24px 0;color:var(--muted);font-size:13px}
+@media(max-width:760px){.workspace{grid-template-columns:1fr}.links{display:none}.hero{padding-top:45px}.examples,.steps{grid-template-columns:1fr}.card{padding:17px}.previewbox{min-height:235px}}
+@media(max-width:400px){.row{grid-template-columns:1fr}h1{font-size:34px}.wrap{width:calc(100% - 22px)}}
+</style></head>
+<body>
+<header><nav class="wrap"><a class="brand" href="#"><span class="logo">▶</span> VIDEO GENERATOR</a><div class="links"><a href="#studio">ویڈیو اسٹوڈیو</a><a href="#examples">مثالیں</a><a href="#how">طریقۂ استعمال</a></div><a class="navbtn" href="#studio">شروع کریں</a></nav></header>
+<main>
+<section class="hero wrap"><span class="pill">✦ AI CREATIVE VIDEO STUDIO</span><h1>آپ کے خیال سے <span class="grad">سینیمیٹک ویڈیو</span> تک</h1><p>اپنا خیال لکھیں، ویڈیو کا انداز اور دورانیہ منتخب کریں، اور اپنے اگلے تخلیقی پروجیکٹ کے لیے تیار ہوجائیں۔</p><div class="actions"><a class="btn primary" href="#studio">ویڈیو بنانا شروع کریں</a><a class="btn" href="#examples">مثالیں دیکھیں</a></div></section>
+<section id="studio" class="wrap workspace">
+<div class="card"><h2>اپنا ویڈیو پرامپٹ بنائیں</h2><p class="muted">اپنے منظر کی تفصیل واضح الفاظ میں لکھیں۔</p>
+<label for="prompt">آپ کا آئیڈیا / Text Prompt</label><textarea id="prompt" maxlength="1800" placeholder="مثال: A cinematic drone shot over a misty mountain village at sunrise..."></textarea><div class="hint"><span id="count">0</span>/1800 حروف</div>
+<div class="row"><div><label for="style">ویڈیو اسٹائل</label><select id="style"><option>Cinematic</option><option>Photorealistic</option><option>Fantasy</option><option>Documentary</option><option>3D Animation</option><option>Anime</option></select></div><div><label for="ratio">Aspect Ratio</label><select id="ratio"><option>9:16 — Shorts / Reels</option><option>16:9 — YouTube</option><option>1:1 — Square</option></select></div><div><label for="duration">دورانیہ</label><select id="duration"><option>5 سیکنڈ</option><option>10 سیکنڈ</option><option>15 سیکنڈ</option><option>30 سیکنڈ</option><option selected>60 سیکنڈ (متعدد کلپس)</option></select></div><div><label for="quality">کوالٹی</label><select id="quality"><option>720p</option><option selected>1080p</option><option>4K (اگر API سپورٹ کرے)</option></select></div></div>
+<p class="hint">60 سیکنڈ کے لیے کئی مختصر کلپس بنا کر جوڑنے پڑ سکتے ہیں۔ اصل دورانیہ AI فراہم کنندہ پر منحصر ہے۔</p><button class="btn primary wide" id="generate">✦ ویڈیو جنریشن شروع کریں</button><div class="notice" id="notice" role="status">حقیقی ویڈیو بنانے کے لیے Runway یا کسی دوسرے AI ویڈیو API کی سرور سائیڈ کنفیگریشن درکار ہے۔ ابھی کوئی ویڈیو جنریٹ یا چارج نہیں کیا گیا۔</div></div>
+<div class="card"><h2>ویڈیو پری ویو</h2><p class="muted">تیار ہونے والی ویڈیو یہاں دکھائی جائے گی۔</p><div class="previewbox"><div><div class="play">▶</div><b>آپ کا پری ویو یہاں آئے گا</b><p>API کنیکٹ ہونے کے بعد اصل ویڈیو یہاں دکھائی جا سکے گی۔</p></div></div><p class="muted">اسٹیٹس: API کنکشن درکار · آؤٹ پٹ: فراہم کنندہ کے مطابق</p></div>
+</section>
+<section id="examples" class="wrap"><div class="section"><h2>آئیڈیاز سے آغاز کریں</h2><p class="muted">کسی مثال پر ٹیپ کریں، پرامپٹ خود بخود شامل ہو جائے گا۔</p></div><div class="examples">
+<button class="example" data-prompt="A tiny magical village hidden inside a crystal raindrop, cinematic macro photography, glowing miniature houses, photorealistic details."><b>💧 قطرے کے اندر ننھی دنیا</b><span>Fantasy · Macro cinematic</span></button>
+<button class="example" data-prompt="A red fox walking through a snowy Hokkaido forest at dawn, natural wildlife documentary footage, realistic fur, soft snowfall."><b>🦊 برفانی جنگل میں لومڑی</b><span>Wildlife · Documentary</span></button>
+<button class="example" data-prompt="A futuristic city skyline emerging above the clouds at sunset, sweeping aerial camera movement, cinematic lighting, realistic architecture."><b>🌆 بادلوں کے اوپر شہر</b><span>Sci-fi · Aerial cinematic</span></button>
+</div></section>
+<section id="how" class="wrap"><div class="section"><h2>یہ کیسے کام کرتا ہے؟</h2><p class="muted">تین آسان مراحل</p></div><div class="steps"><div class="step"><b>01 — IDEA</b><h3>اپنا خیال لکھیں</h3><p>منظر، کردار، ماحول اور کیمرہ موومنٹ بیان کریں۔</p></div><div class="step"><b>02 — SETTINGS</b><h3>سیٹنگز منتخب کریں</h3><p>اسٹائل، ویڈیو سائز، دورانیہ اور کوالٹی منتخب کریں۔</p></div><div class="step"><b>03 — GENERATE</b><h3>ویڈیو تیار کریں</h3><p>API کنکشن کے بعد جنریشن اور ڈاؤن لوڈ فعال ہوں گے۔</p></div></div></section>
+</main><footer><div class="wrap">© 2026 Video Generator · AI Video Studio · موبائل اور کمپیوٹر کے لیے تیار</div></footer>
+<script>
+const p=document.getElementById('prompt'),c=document.getElementById('count'),n=document.getElementById('notice');
+p.addEventListener('input',()=>c.textContent=p.value.length);
+document.querySelectorAll('.example').forEach(b=>b.addEventListener('click',()=>{p.value=b.dataset.prompt;c.textContent=p.value.length;document.getElementById('studio').scrollIntoView({behavior:'smooth'});}));
+document.getElementById('generate').addEventListener('click',()=>{if(!p.value.trim()){p.focus();n.textContent='براہِ کرم پہلے اپنا ویڈیو آئیڈیا لکھیں۔';}else{n.textContent='حقیقی ویڈیو بنانے کے لیے AI API کو سرور پر محفوظ طریقے سے منسلک کرنا باقی ہے۔ ابھی کوئی ویڈیو جنریٹ یا چارج نہیں کیا گیا۔';}n.classList.add('show');});
+</script></body></html>
